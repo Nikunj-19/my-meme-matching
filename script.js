@@ -55,8 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const secondCardId = cardsChosenId[1];
 
         if (cardsChosen[0] === cardsChosen[1] && firstCardId !== secondCardId) {
-            cards[firstCardId].style.visibility = 'hidden';
-            cards[secondCardId].style.visibility = 'hidden';
+           
             cards[firstCardId].removeEventListener('click', flipCard);
             cards[secondCardId].removeEventListener('click', flipCard);
             cardsWon.push(cardsChosen);
