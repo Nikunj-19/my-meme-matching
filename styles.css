@@ -26,6 +26,12 @@ h1 {
     color: #adbac7;
 }
 
+.info {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #ffd700;
+}
+
 #game-board {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -35,28 +41,20 @@ h1 {
     padding: 20px;
 }
 
-.card {
-    width: 211.8px;
-    height: 166.2px;
-    background-color: #565c6f;
+#game-board img {
+    width: 100%;
+    height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+    background-color: #565c6f;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
 }
 
-.card img {
-    width: 100%;
-    height: auto;
-    visibility: hidden; /* Hide images by default */
-    display: block;
-}
-
-.card.show img {
-    visibility: visible; /* Show image when card is flipped */
+/* Flip animation */
+#game-board img.flipped {
+    transform: rotateY(180deg);
 }
 
 #start-game {
@@ -68,9 +66,10 @@ h1 {
     cursor: pointer;
     font-size: 18px;
     transition: background-color 0.3s, transform 0.3s;
+    margin-bottom: 20px;
 }
 
 #start-game:hover {
-    background-color: #43a047; /* Darker on hover */
-    transform: scale(1.05); /* Slightly enlarges on hover */
+    background-color: #43a047;
+    transform: scale(1.05);
 }
