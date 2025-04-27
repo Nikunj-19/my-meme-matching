@@ -36,10 +36,10 @@ h1 {
 }
 
 .card {
-    width: 150.8px;
-    height: 100.2px;
+    width: 211.8px;
+    height: 166.2px;
     background-color: #565c6f;
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     display: flex;
@@ -74,15 +74,3 @@ h1 {
     background-color: #43a047; /* Darker on hover */
     transform: scale(1.05); /* Slightly enlarges on hover */
 }
-/* style.css */
-
-#game-board img {
-    transition: transform 0.3s ease;
-    transform: rotateY(0deg);
-    transform-style: preserve-3d;
-}
-
-#game-board img.flipped {
-    transform: rotateY(180deg);
-}
-
