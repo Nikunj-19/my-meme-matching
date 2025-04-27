@@ -74,3 +74,15 @@ h1 {
     background-color: #43a047; /* Darker on hover */
     transform: scale(1.05); /* Slightly enlarges on hover */
 }
+/* style.css */
+
+#game-board img {
+    transition: transform 0.3s ease;
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+}
+
+#game-board img.flipped {
+    transform: rotateY(180deg);
+}
+
